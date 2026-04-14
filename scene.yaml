@@ -1,0 +1,338 @@
+---
+viewport:
+  width: 600
+  height: 400
+  fit: contain
+  align: center
+objects:
+- id: sky
+  context: canvas
+  type: rectangle
+  position:
+    x: 0
+    y: 0
+  size:
+    width: 600
+    height: 400
+  style:
+    fillStyle: "#FFFAF0"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: sun
+  context: canvas
+  type: circle
+  position:
+    x: 500
+    y: 80
+  size:
+    radius: 32
+  style:
+    fillStyle: "#F4D03F"
+    strokeStyle: "#E1B928"
+    lineWidth: 2
+- id: ground
+  context: canvas
+  type: rectangle
+  position:
+    x: 0
+    y: 320
+  size:
+    width: 600
+    height: 80
+  style:
+    fillStyle: "#E8EDEA"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: puddle
+  context: canvas
+  type: path
+  position:
+    x: 470
+    y: 330
+  properties:
+    pathData: M-42 0 C-42 -10 42 -10 42 0 C42 10 -42 10 -42 0 Z
+  style:
+    fillStyle: "#AED6F1"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: back-leg-1
+  context: canvas
+  type: rectangle
+  position:
+    x: 150
+    y: 220
+  size:
+    width: 28
+    height: 110
+  style:
+    fillStyle: "#5B6768"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: back-leg-2
+  context: canvas
+  type: rectangle
+  position:
+    x: 230
+    y: 220
+  size:
+    width: 28
+    height: 110
+  style:
+    fillStyle: "#5B6768"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: front-leg-1
+  context: canvas
+  type: rectangle
+  position:
+    x: 130
+    y: 220
+  size:
+    width: 28
+    height: 110
+  style:
+    fillStyle: "#7F8C8D"
+    strokeStyle: "#758688"
+    lineWidth: 1.5
+- id: front-leg-2
+  context: canvas
+  type: rectangle
+  position:
+    x: 210
+    y: 220
+  size:
+    width: 28
+    height: 110
+  style:
+    fillStyle: "#7F8C8D"
+    strokeStyle: "#758688"
+    lineWidth: 1.5
+- id: body
+  context: canvas
+  type: path
+  position:
+    x: 88
+    y: 136
+  properties:
+    pathData: M0 78 C0 34 44 2 108 2 C176 2 224 36 224 82 C224 122 178 154 112 154 C44 154 0 122 0 78 Z
+  style:
+    fillStyle: "#7F8C8D"
+    strokeStyle: "#758688"
+    lineWidth: 2
+- id: head
+  context: canvas
+  type: circle
+  position:
+    x: 260
+    y: 180
+  size:
+    radius: 65
+  style:
+    fillStyle: "#7F8C8D"
+    strokeStyle: "#758688"
+    lineWidth: 2
+- id: ear
+  context: canvas
+  type: path
+  position:
+    x: 248
+    y: 140
+  properties:
+    pathData: M0 0 C70 -10 50 110 -10 100 C-70 90 -50 10 0 0 Z
+  style:
+    fillStyle: "#95A5A6"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: ear-inner
+  context: canvas
+  type: path
+  position:
+    x: 253
+    y: 155
+  properties:
+    pathData: M0 0 C45 -5 30 75 -10 65 C-45 55 -30 5 0 0 Z
+  style:
+    fillStyle: "#F5B7B1"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: trunk
+  context: canvas
+  type: path
+  position:
+    x: 290
+    y: 200
+  properties:
+    pathData: M0 0 Q55 50 72 -28 T90 -110
+  style:
+    fillStyle: transparent
+    strokeStyle: "#7F8C8D"
+    lineWidth: 26
+- id: trunk-wrinkles
+  context: canvas
+  type: path
+  position:
+    x: 290
+    y: 200
+  properties:
+    pathData: M30 20 L45 25 M55 -15 L70 -10 M75 -70 L85 -65
+  style:
+    fillStyle: transparent
+    strokeStyle: "#5B6768"
+    lineWidth: 3
+- id: tusk
+  context: canvas
+  type: path
+  position:
+    x: 285
+    y: 205
+  properties:
+    pathData: M0 0 Q25 30 55 20 Q25 15 0 10 Z
+  style:
+    fillStyle: "#ECF0F1"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: eye
+  context: canvas
+  type: circle
+  position:
+    x: 285
+    y: 160
+  size:
+    radius: 6
+  style:
+    fillStyle: "#1A252F"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: eye-highlight
+  context: canvas
+  type: circle
+  position:
+    x: 287
+    y: 158
+  size:
+    radius: 2
+  style:
+    fillStyle: "#FFFFFF"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: smile
+  context: canvas
+  type: path
+  position:
+    x: 265
+    y: 210
+  properties:
+    pathData: M0 0 Q15 15 30 0
+  style:
+    fillStyle: transparent
+    strokeStyle: "#5B6768"
+    lineWidth: 3
+- id: tail
+  context: canvas
+  type: path
+  position:
+    x: 130
+    y: 180
+  properties:
+    pathData: M0 0 Q-40 40 -30 90
+  style:
+    fillStyle: transparent
+    strokeStyle: "#7F8C8D"
+    lineWidth: 8
+- id: tail-tip
+  context: canvas
+  type: path
+  position:
+    x: 95
+    y: 260
+  properties:
+    pathData: M0 0 L10 20 L0 20 Z
+  style:
+    fillStyle: "#5B6768"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: water-stream-1
+  context: canvas
+  type: path
+  position:
+    x: 290
+    y: 200
+  properties:
+    pathData: M90 -110 Q150 -220 190 130
+  style:
+    fillStyle: transparent
+    strokeStyle: "#3498DB"
+    lineWidth: 12
+- id: water-stream-2
+  context: canvas
+  type: path
+  position:
+    x: 290
+    y: 200
+  properties:
+    pathData: M90 -110 Q175 -210 210 140
+  style:
+    fillStyle: transparent
+    strokeStyle: "#85C1E9"
+    lineWidth: 8
+- id: water-stream-3
+  context: canvas
+  type: path
+  position:
+    x: 290
+    y: 200
+  properties:
+    pathData: M90 -110 Q120 -230 170 140
+  style:
+    fillStyle: transparent
+    strokeStyle: "#5DADE2"
+    lineWidth: 10
+- id: splash-1
+  context: canvas
+  type: circle
+  position:
+    x: 470
+    y: 312
+  size:
+    radius: 4
+  style:
+    fillStyle: "#3498DB"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: splash-2
+  context: canvas
+  type: circle
+  position:
+    x: 485
+    y: 305
+  size:
+    radius: 5
+  style:
+    fillStyle: "#85C1E9"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: splash-3
+  context: canvas
+  type: circle
+  position:
+    x: 455
+    y: 308
+  size:
+    radius: 4
+  style:
+    fillStyle: "#5DADE2"
+    strokeStyle: transparent
+    lineWidth: 0
+- id: title
+  context: dom
+  type: div
+  position:
+    x: 18
+    y: 18
+  properties:
+    text: ELEPHANT SPRAY
+  style:
+    color: "#5B6768"
+    fontSize: 22
+    fontFamily: monospace
+    fontWeight: bold

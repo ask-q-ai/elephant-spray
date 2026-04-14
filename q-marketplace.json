@@ -1,0 +1,16 @@
+{
+  "version": "1",
+  "kind": "visman",
+  "id": "elephant-spray",
+  "name": "Elephant Spray",
+  "description": "Standalone Elephant Spray scene package from the VisMan demo library.",
+  "entry": "scene.yaml",
+  "tags": [
+    "elephant",
+    "spray",
+    "scene"
+  ],
+  "sources": [
+    "scene.yaml"
+  ]
+}
